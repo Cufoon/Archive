@@ -1,0 +1,374 @@
+/*基础设定*/
+
+body {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*顶栏*/
+
+.navtop {
+    background-color: rgb(255, 108, 140);
+    border-radius: 15px;
+    width: 100%;
+    height: 52px;
+}
+
+.logo {
+    height: 30px;
+    margin-top: 12px;
+    margin-left: 30px;
+}
+
+.navtop .search {
+    display: inline;
+    float: right;
+    margin: 0;
+    margin-top: 8px;
+}
+
+.navtop .search .search_input {
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 3px;
+    width: 180px;
+    height: 30px;
+}
+
+.navtop .search .search_btn {
+    background-color: aliceblue;
+    color: black;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: rgb(189, 7, 77);
+    width: 50px;
+    height: 30px;
+}
+
+.navtop .login {
+    float: right;
+    margin: 7px;
+    margin-left: 5px;
+    margin-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.navtop .login a {
+    background: rgb(0, 0, 0);
+    color: white;
+    border-radius: 35px;
+    padding: 8px;
+}
+
+.navtop .login a:hover,
+a:active {
+    background-color: rgb(19, 155, 245);
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.content {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.text_left {
+    float: left;
+    background: rgb(255, 140, 140);
+    width: 15%;
+    height: 1180px;
+}
+
+.text_right {
+    float: right;
+    background: rgb(226, 226, 228);
+    width: 85%;
+    height: 1180px;
+}
+
+.text_left .part1 {
+    margin-top: 10px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.text_left .part1 span {
+    display: inline-block;
+    font-size: 36px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.text_left .s1 {
+    color: white;
+    float: left;
+    margin-left: 20%;
+}
+
+.text_left .s2 {
+    color: white;
+    float: right;
+    margin-right: 20%;
+}
+
+.text_left .part2 {
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.466);
+}
+
+.text_right .part1 {
+    background: rgb(255, 255, 255);
+    width: 99.9%;
+    font-size: 12px;
+    border: 0.1% rgb(226, 226, 228);
+}
+
+.text_right .part2 {
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 30px;
+    background: white;
+    overflow: hidden;
+}
+
+.text_right .part3 {
+    margin-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.text_right .part3 #item {
+    line-height: 50px;
+    float: left;
+    background: white;
+    width: 14.6%;
+    height: 100px;
+    text-align: center;
+    margin-left: 1%;
+}
+
+.text_right .part3 .now {
+    line-height: 100px;
+    float: left;
+    background: white;
+    width: 2.7%;
+    height: 100px;
+    text-align: center;
+}
+
+.text_right .part3 .see {
+    line-height: 100px;
+    float: left;
+    background: white;
+    width: 14.6%;
+    height: 100px;
+    text-align: center;
+    margin-left: 1%;
+}
+
+.text_right .part4 {
+    width: 100%;
+}
+
+.text_right .part4 .square {
+    float: left;
+    background: white;
+    border-left: 4px solid rgb(0, 216, 36);
+    margin-left: 1.3%;
+    padding-top: 15px;
+    width: 23%;
+    height: 75px;
+}
+
+.text_right .part4 .square .small {
+    width: 50%;
+    height: 60px;
+    margin-left: 50%;
+    background: green;
+}
+
+.text_right .part5 {
+    width: 100%；
+}
+
+.text_right .part5 .part1 {
+    margin-top: 10px;
+    margin-left: 1%;
+    float: left;
+    background: white;
+    border: 1px solid grey;
+    border-radius: 6px;
+    width: 66%;
+    height: 340px;
+}
+
+.text_right .part5 .part1 .p1,
+.text_right .part5 .part2 .p1,
+.text_right .part6 .part1 .p1,
+.text_right .part6 .part2 .p1 {
+    width: 100%;
+    background: #b1afaf;
+    height: 32px;
+    line-height: 32px;
+}
+
+.text_right .part5 .part1 ul {
+    list-style: none;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.text_right .part5 .part1 ul li {
+    float: left;
+    text-align: center;
+    background: rgb(214, 214, 214);
+    margin-left: 1%;
+    border: 1px solid black;
+    width: 18.5%;
+}
+
+.text_right .part5 .part1 .p2 {
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 50px;
+    background: rgb(255, 255, 255);
+    border: 2px solid #c4c2c2;
+    border-radius: 2px;
+}
+
+.text_right .part5 .part1 .p2 table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 80%;
+}
+
+.text_right .part5 .part1 .p2 td {
+    text-align: center;
+    border: 3px solid grey;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    line-height: 16px;
+    width: 20%;
+    background: white;
+}
+
+.text_right .part5 .part2 {
+    margin-left: 1.5%;
+    margin-top: 10px;
+    padding: 0;
+    float: left;
+    background: white;
+    border: 1px solid grey;
+    border-radius: 6px;
+    width: 30%;
+    height: 340px;
+}
+
+.text_right .part5 .part2 .p2 {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.text_right .part6 {
+    margin-left: 9px;
+    width: 100%；
+}
+
+.text_right .part6 .part1 {
+    margin-top: 10px;
+    float: left;
+    background: white;
+    border: 1px solid grey;
+    border-radius: 6px;
+    width: 30%;
+    height: 340px;
+}
+
+.text_right .part6 .part1 .p2 {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.text_right .part6 .part1 .p2 select {
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+    width: 23%;
+}
+
+.fgxian{
+    margin-top: 5px;
+    margin-left: 1%;
+    width: 98%;
+    height: 2px;
+    background: pink;
+}
+.text_right .part6 .part1 .p3{
+    margin-left: 9px;
+    height: 45px;
+}
+.text_right .part6 .part1 .p3 div{
+    text-align: center;
+    float: left;
+    height: 45px;
+    margin-left: 3px;
+    line-height: 45px;
+    width: 13%;
+}
+.text_right .part6 .part1 .p4 div{
+    text-align: center;
+    float: right;
+    width: 14%;
+    height: 40px;
+    line-height: 40px;
+}
+.text_right .part6 .part2 {
+    margin-left: 1.5%;
+    margin-top: 10px;
+    margin-right: -10px;
+    padding: 0;
+    float: left;
+    background: white;
+    border: 1px solid grey;
+    border-radius: 6px;
+    width: 67%;
+    height: 340px;
+}
+.text_right .part6 .part2 .biao{
+    border-collapse: collapse;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 80%;
+}
+.text_right .part6 .part2 .biao td{
+    padding: 3px;
+    border: 1px solid rgb(209, 207, 207);
+    text-align: center;
+}
+.text_right .part6 .part2 .biao td #number{
+    float: left;
+    display: inline;
+    text-align: center;
+    width: 38%;
+}
+.text_right .part6 .part2 .biao td #grey{
+    display: inline;
+    margin-top: 8px;
+    float: left;
+    width: 60%;
+    height: 5px;
+    background: grey;
+}
+.text_right .part6 .part2 .biao td #light{
+    width: 80%;
+    height: 5px;
+    background: rgb(255, 128, 128);
+}

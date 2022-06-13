@@ -1,0 +1,139 @@
+/*基础设定*/
+body{
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+/*导航栏标志文字*/
+.ti{
+    text-align: center;
+    display: inline;
+    color: black;
+    margin: -20px 0 0 5px;
+    padding-top: -20px;
+    font-size: 40px;
+    font-weight: 1000;
+}
+/*导航栏*/
+.nav{
+    display: inline-block;
+    float: right;
+    margin-top: 15px;
+}
+
+.nav li{
+    list-style-type: none;
+    float: left;
+    margin-right: 8px;/*导航键间隔*/
+    padding-top: 8px;/*固定链接文字*/
+    padding-bottom: 8px;/*固定链接文字*/
+}
+
+.nav li a:link,a:visited{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 8px;
+}
+
+.nav li a:hover,a:active{
+    background-color: rgb(19, 155, 245);
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+/*导航栏登陆按钮*/
+.login{
+    float: right;
+    margin-left: 5px;
+    margin-right: 2px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.login a{
+    background: rgb(245, 21, 152);
+    color: white;
+    border-radius: 35px;
+    padding: 8px;
+}
+.login a:hover,a:active{
+    background-color: rgb(19, 155, 245);
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/*第一幅大图*/
+.navimg{
+    text-align: center;
+    background: url("unsplash.png") no-repeat 0 center;
+    background-size: 100%;
+    padding-top: 150px; 
+    width:100%;
+    height:300px;
+}
+.navimg .p1{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+}
+.navimg .p2{
+    color: white;
+    font-size: 25px;
+}
+.navimg .b1{
+    display: inline-block;
+    background: rgb(9, 168, 189);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    width: 120px;
+    font-size: 24px;
+}
+
+
+
+
+.start{
+    background: url("bg.png") repeat repeat 0 center;
+    margin: 0;
+    padding-bottom: 30px;
+    width: 100%;
+    overflow: hidden;
+}
+.start .p1{
+    text-align: center;
+}
+.start .p1 p{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(121, 121, 121);
+}
+
+
+.start .p2{
+    background: url("2.png") no-repeat 0 center;
+    background-size: 100%;
+    margin-bottom: 30px;
+    padding: 0;
+    width:100%;
+    height: 400px;
+}
+.start .p2 select{
+    position: relative;
+    left: 10%;
+    top: 50%;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+.start .p3 img{
+    display: block;
+    float: left;
+    margin-left: 7.2%;
+    padding: 0;
+    width: 16%;
+}
+.start .p3 .pic1{
+    margin-top: 80px;
+}

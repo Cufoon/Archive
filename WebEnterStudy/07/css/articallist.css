@@ -1,0 +1,37 @@
+.one {
+    background: linear-gradient(140deg, pink 0%, rgb(98, 0, 255) 100%);
+    min-height: 75em;
+    height: auto;
+    overflow: hidden;
+}
+
+.one .first {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.one .first .title {
+    font-size: 5em;
+    color: #ffffff;
+    text-shadow: 1px 1px 8px #002ae783;
+}
+
+#list {
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+    overflow: hidden;
+}
+
+#loadmore {
+    text-align: center;
+    font-size: 2em;
+    color: #ffffff;
+    text-shadow: 0 0 2px 3px rgb(248, 40, 40);
+    width: 100%;
+    margin: 0;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}

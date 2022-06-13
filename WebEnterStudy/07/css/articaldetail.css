@@ -1,0 +1,131 @@
+.onebg {
+    background: linear-gradient(140deg, pink 0%, rgb(98, 0, 255) 100%);
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.onehand {
+    background-image: url("../res/blue_hand.png");
+    background-repeat: no-repeat no-repeat;
+    background-size: 40%;
+    background-position: 100% 0;
+    padding-bottom: 2em;
+    width: 100%;
+    overflow: hidden;
+}
+
+.leftp {
+    float: left;
+    width: 50%;
+    margin-left: 6%;
+}
+
+.rightp {
+    float: right;
+    width: 30%;
+    text-align: center;
+    margin-right: 6%;
+}
+
+.leftp .detail {
+    width: 100%;
+    background: #ffffffb6;
+    padding: 2em;
+}
+
+.leftp .detail .title {
+    font-size: 2.2em;
+    color: black;
+    margin-bottom: 0.3em;
+}
+
+.leftp .detail .zy {
+    margin-top: 0.3em;
+    width: 100%;
+    overflow: hidden;
+}
+
+.leftp .detail .vline {
+    float: left;
+    width: 2px;
+    margin-right: 1px;
+    height: 3em;
+    background: #bbbbbb;
+}
+
+.leftp .detail .zhaiyao {
+    float: left;
+    color: #8a8a8a;
+    width: 30em;
+    height: 3em;
+}
+
+.sj {
+    text-indent: 2em;
+}
+
+.leftp .detail .img {
+    text-align: center;
+}
+
+.leftp .detail .img .txt {
+    width: 20em;
+    height: 15em;
+    margin: 1em auto 1em auto;
+    line-height: 15em;
+    background: rgba(138, 138, 138, 0.288);
+}
+
+.leftp .detail .logo {
+    margin: 1em auto 0 auto;
+}
+
+.rightp .nearbg {
+    color: aliceblue;
+    width: 80%;
+    text-align: left;
+    margin: 20em auto 0 auto;
+}
+
+.rightp .nearbg .date {
+    font-size: 1.1em;
+    color: aliceblue;
+    margin-left: 0;
+    text-shadow: 0 0 1px rgb(255, 0, 106);
+}
+
+.rightp .nearbg .eg1 {
+    width: 100%;
+    font-size: 1em;
+    background: #bbbbbb;
+    margin-top: 0.8em;
+    overflow: hidden;
+}
+
+.rightp .nearbg .eg1 .eg1img {
+    width: 100%;
+    height: 7em;
+    background: rgb(255, 255, 255);
+}
+
+.rightp .nearbg .eg1 p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.rightp .nearbg .eg1 .time {
+    float: left;
+    color: grey;
+}
+
+.rightp .nearbg .eg1 .likenum {
+    float: right;
+    color: grey;
+}
+
+.rightp .nearbg .eg1 .like {
+    float: right;
+    height: 1em;
+}

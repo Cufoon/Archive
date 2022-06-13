@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>多人聊天</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="login">
+      <div class="title">一个聊天室</div>
+      <div class="login-outer">
+        <input class="input" placeholder="输入你的用户名" name="userName" id="userName" />
+        <div id="comein" class="comein">进入聊天室</div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="left">
+        <div class="person"><text id="online">在线人数</text></div>
+        <div class="content-outer" id="contentOuter">
+          <div class="content" id="content"></div>
+          <div class="content" id="contentUser" style="display: none"></div>
+        </div>
+        <div class="input-area">
+          <input placeholder="输入内容" id="message" name="message" class="message" />
+          <div id="sendMessage" class="send-message">发送</div>
+        </div>
+      </div>
+      <div class="right" id="userListOuter">
+        <div class="title"><text>在线用户列表</text></div>
+        <div id="userList" class="user-list"></div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

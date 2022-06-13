@@ -1,0 +1,29 @@
+.background {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  .content {
+    width: 100%;
+    height: auto;
+    padding: 18px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 40px rgba(146, 129, 206, 0.1);
+
+    .title {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: rgb(19, 19, 19);
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .toolBar {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+}

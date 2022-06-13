@@ -1,0 +1,21 @@
+{
+  "name": "chat-server",
+  "version": "1.0.0",
+  "description": "a server of socker chat",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./server/app.js"
+  },
+  "keywords": [
+    "socket",
+    "chat"
+  ],
+  "author": "Cufoon",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "2.3.1"
+  },
+  "dependencies": {
+    "ws": "7.4.6"
+  }
+}

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>来评论吧</title>
+    </head>
+    <style>
+        div {
+            box-sizing: border-box;
+        }
+        #com_bg {
+            width: 45em;
+            margin: 0 auto;
+            padding: 1em;
+            text-align: center;
+        }
+
+        .title01 {
+            width: 36em;
+            height: 2em;
+            line-height: 2em;
+            margin: 0 auto;
+            color: rgb(88, 85, 85);
+            background-color: rgb(251, 251, 251);
+            text-align: center;
+        }
+
+        .textedit {
+            width: 36em;
+            margin: 0 auto;
+            padding-bottom: 1em;
+            background: rgb(251, 251, 251);
+        }
+
+        #username {
+            margin: 0 auto;
+            padding: 0.4em;
+            color: rgb(88, 85, 85);
+        }
+
+        #username #ename {
+            height: 1.3em;
+            border: none;
+            border-bottom: 0.1em rgb(88, 85, 85) solid;
+            color: rgb(88, 85, 85);
+            caret-color: rgb(88, 85, 85);
+            background: none;
+            outline: none;
+        }
+
+        #com {
+            width: 30em;
+            outline: none;
+            border: 0.05em solid rgb(88, 85, 85);
+            border-radius: 0.2em;
+            padding: 1em;
+            color: rgb(88, 85, 85);
+            background: none;
+            resize: none;
+        }
+
+        #com::-webkit-input-placeholder {
+            color: rgb(88, 85, 85);
+        }
+
+        #com::-moz-placeholder {
+            color: rgb(88, 85, 85);
+        }
+
+        #com:-ms-input-placeholder {
+            color: rgb(88, 85, 85);
+        }
+
+        #submit {
+            background: rgb(255, 255, 255);
+            padding: 1em;
+            width: 8em;
+            box-shadow: rgba(0, 0, 0, 0.02) 0 0 20px 0.5px;
+            color: rgb(20, 24, 39);
+            margin: 0 auto;
+            margin-top: 3em;
+            cursor: pointer;
+        }
+
+        .title02 {
+            width: 36em;
+            margin: 0 auto;
+            margin-top: 3em;
+            padding: 0.4em;
+            color: rgb(0, 0, 0);
+            background: rgb(251, 251, 251);
+            text-align: center;
+        }
+
+        #comss {
+            width: 36em;
+            padding: 0.3em;
+            margin: 0 auto;
+            min-height: 2em;
+            background: rgb(251, 251, 251);
+            border: none;
+            border-bottom: 0.1em solid rgb(240, 240, 240);
+        }
+
+        .acomment {
+            margin: 0 auto;
+            margin-bottom: 0.3em;
+            width: 35.2em;
+            height: 5em;
+            padding: 0.1em;
+            padding-top: 0.2em;
+            background: rgb(251, 251, 251);
+            border: none;
+            border-top: 0.1em solid rgb(240, 240, 240);
+        }
+
+        .acomment_con {
+            width: 35.2em;
+            height: 4em;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .acomment_name {
+            width: 35.2em;
+            height: 1em;
+            text-align: right;
+        }
+
+        .container {
+            width: 8em;
+            height: 1em;
+            font-size: 35px;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+
+        .container span {
+            width: 1em;
+            height: 1em;
+            --duration: 1.5s;
+        }
+
+        .girl {
+            animation: slide var(--duration) ease-in-out infinite alternate;
+        }
+
+        @keyframes slide {
+            from {
+                transform: translateX(0);
+                filter: brightness(1);
+            }
+
+            to {
+                transform: translatex(calc(8em - (1em * 1.25)));
+                filter: brightness(1.45);
+            }
+        }
+
+        .boys {
+            width: 6em;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .boys span {
+            animation: var(--duration) ease-in-out infinite alternate;
+        }
+
+        .boys span:nth-child(1) {
+            animation-name: jump-off-1;
+        }
+
+        .boys span:nth-child(2) {
+            animation-name: jump-off-2;
+        }
+
+        .boys span:nth-child(3) {
+            animation-name: jump-off-3;
+        }
+
+        .boys span:nth-child(4) {
+            animation-name: jump-off-4;
+        }
+
+        @keyframes jump-off-1 {
+            0%,
+            15% {
+                transform: rotate(0deg);
+            }
+
+            35%,
+            100% {
+                transform-origin: -50% center;
+                transform: rotate(-180deg);
+            }
+        }
+
+        @keyframes jump-off-2 {
+            0%,
+            30% {
+                transform: rotate(0deg);
+            }
+
+            50%,
+            100% {
+                transform-origin: -50% center;
+                transform: rotate(-180deg);
+            }
+        }
+
+        @keyframes jump-off-3 {
+            0%,
+            45% {
+                transform: rotate(0deg);
+            }
+
+            65%,
+            100% {
+                transform-origin: -50% center;
+                transform: rotate(-180deg);
+            }
+        }
+
+        @keyframes jump-off-4 {
+            0%,
+            60% {
+                transform: rotate(0deg);
+            }
+
+            80%,
+            100% {
+                transform-origin: -50% center;
+                transform: rotate(-180deg);
+            }
+        }
+
+        .container span::before {
+            content: '';
+            position: absolute;
+            width: inherit;
+            height: inherit;
+            border-radius: 15%;
+            box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.3);
+        }
+
+        .girl::before {
+            background-color: hotpink;
+        }
+
+        .boys span::before {
+            background-color: dodgerblue;
+            animation: var(--duration) ease-in-out infinite alternate;
+        }
+
+        .boys span:nth-child(1)::before {
+            filter: brightness(1);
+            animation-name: jump-down-1;
+        }
+
+        .boys span:nth-child(2)::before {
+            filter: brightness(1.15);
+            animation-name: jump-down-2;
+        }
+
+        .boys span:nth-child(3)::before {
+            filter: brightness(1.3);
+            animation-name: jump-down-3;
+        }
+
+        .boys span:nth-child(4)::before {
+            filter: brightness(1.45);
+            animation-name: jump-down-4;
+        }
+
+        @keyframes jump-down-1 {
+            5% {
+                transform: scale(1, 1);
+            }
+
+            15% {
+                transform-origin: center bottom;
+                transform: scale(1.3, 0.7);
+            }
+
+            20%,
+            25% {
+                transform-origin: center bottom;
+                transform: scale(0.8, 1.4);
+            }
+
+            40% {
+                transform-origin: center top;
+                transform: scale(1.3, 0.7);
+            }
+
+            55%,
+            100% {
+                transform: scale(1, 1);
+            }
+        }
+
+        @keyframes jump-down-2 {
+            20% {
+                transform: scale(1, 1);
+            }
+
+            30% {
+                transform-origin: center bottom;
+                transform: scale(1.3, 0.7);
+            }
+
+            35%,
+            40% {
+                transform-origin: center bottom;
+                transform: scale(0.8, 1.4);
+            }
+
+            55% {
+                transform-origin: center top;
+                transform: scale(1.3, 0.7);
+            }
+
+            70%,
+            100% {
+                transform: scale(1, 1);
+            }
+        }
+
+        @keyframes jump-down-3 {
+            35% {
+                transform: scale(1, 1);
+            }
+
+            45% {
+                transform-origin: center bottom;
+                transform: scale(1.3, 0.7);
+            }
+
+            50%,
+            55% {
+                transform-origin: center bottom;
+                transform: scale(0.8, 1.4);
+            }
+
+            70% {
+                transform-origin: center top;
+                transform: scale(1.3, 0.7);
+            }
+
+            85%,
+            100% {
+                transform: scale(1, 1);
+            }
+        }
+
+        @keyframes jump-down-4 {
+            50% {
+                transform: scale(1, 1);
+            }
+
+            60% {
+                transform-origin: center bottom;
+                transform: scale(1.3, 0.7);
+            }
+
+            65%,
+            70% {
+                transform-origin: center bottom;
+                transform: scale(0.8, 1.4);
+            }
+
+            85% {
+                transform-origin: center top;
+                transform: scale(1.3, 0.7);
+            }
+
+            100%,
+            100% {
+                transform: scale(1, 1);
+            }
+        }
+    </style>
+
+    <body>
+        <div id="com_bg">
+            <div class="title01">评论</div>
+            <div class="textedit">
+                <div id="username">
+                    <span>你的名字：</span><input type="text" id="ename" />
+                </div>
+                <textarea
+                    id="com"
+                    rows="5"
+                    cols="20"
+                    placeholder="在这里写下你的评论"
+                ></textarea>
+                <div id="submit">提交我的评论</div>
+
+                <div class="title02">大家的评论</div>
+                <div id="comss">
+                    <div id="coms"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        readcomments(false)
+        var submit = find('submit')
+        submit.onclick = function() {
+            var name = find('ename')
+            var comment = find('com')
+            if (name.value == 'undefined' || comment.value == '') {
+                alert('姓名和评论内容均不能为空！')
+            } else {
+                sub_GET(successcom)
+            }
+        }
+        function sub_GET(callback) {
+            //加载动画 开始---
+            var alertCard = create('div')
+            alertCard.id = 'bg_card'
+            alertCard.style.width = '100%'
+            alertCard.style.height = '100%'
+            alertCard.style.backgroundColor = '#00000088'
+            alertCard.style.position = 'absolute'
+            alertCard.style.top = '0px'
+            alertCard.style.left = '0px'
+            alertCard.style.zIndex = '2'
+            var com_bg = find('com_bg').parentNode
+            com_bg.appendChild(alertCard)
+            alertCard.innerHTML =
+                '<div style="width:100%;text-align:center;margin-top:14em"><div style="margin-bottom:4em;color:white">提交中</div><div class="container"><span class="girl"></span><div class="boys"><span></span><span></span><span></span><span></span></div></div></div>'
+            //加载动画 结束---
+            //xmlHttpRequest
+            var xhr = ct_xhr()
+            var datajson = {
+                name: find('ename').value,
+                comment: find('com').value
+            }
+            var datastring = JSON.stringify(datajson)
+            xhr.open('POST', 'post.php', true)
+            xhr.setRequestHeader('Content-Type', 'application/json')
+            xhr.send(datastring)
+            //代替php后端 假装执行成功
+            //setTimeout(callback, 1000);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    if (xhr.responseText == true) {
+                        readcomments()
+                        successcom()
+                    } else {
+                        remove('bg_card')
+                        alert('评论失败，请重试')
+                    }
+                }
+            }
+        }
+        function successcom() {
+            remove('bg_card')
+            find('ename').value = ''
+            find('com').value = ''
+        }
+        function find(id) {
+            var temp = document.getElementById(id)
+            return temp
+        }
+        function create(e_name) {
+            var temp = document.createElement(e_name)
+            return temp
+        }
+        function ct_xhr() {
+            var xhr
+            if (window.XMLHttpRequest) {
+                xhr = new XMLHttpRequest()
+            } else {
+                xhr = new ActiveXObject('Microsoft.XMLHTTP')
+            }
+            return xhr
+        }
+        function remove(id) {
+            var temp = find(id)
+            temp.parentNode.removeChild(temp)
+        }
+        function readcomments() {
+            var xhr = ct_xhr()
+            xhr.open('GET', 'get.php', true)
+            xhr.setRequestHeader('Content-Type', 'application/json')
+            xhr.send('')
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    var coms = xhr.responseText
+                    var jsoncoms = JSON.parse(coms)
+                    comdisplay(jsoncoms)
+                    successcom(true)
+                }
+            }
+        }
+        function comdisplay(json) {
+            remove('coms')
+            var comcom = create('div')
+            comcom.id = 'coms'
+            find('comss').appendChild(comcom)
+            for (var i = json.comments.length - 1; i >= 0; i--) {
+                var acom = create('div')
+                acom.id = 'temp'
+                acom.classList.add('acomment')
+                find('coms').appendChild(acom)
+                var acom_con = create('div')
+                acom_con.id = 'temp01'
+                acom_con.classList.add('acomment_con')
+                var acom_name = create('div')
+                acom_name.id = 'temp02'
+                acom_name.classList.add('acomment_name')
+                find('temp').appendChild(acom_con)
+                find('temp').appendChild(acom_name)
+                find('temp01').innerText = json.comments[i].comment
+                find('temp02').innerText = json.comments[i].name
+                find('temp').removeAttribute('id')
+                find('temp01').removeAttribute('id')
+                find('temp02').removeAttribute('id')
+            }
+        }
+    </script>
+</html>

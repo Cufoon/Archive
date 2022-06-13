@@ -1,0 +1,15 @@
+server:
+  port: 8888
+spring:
+  datasource:
+    # vm for test
+    url: jdbc:mysql://xxx.xxx.xxx.xxx:3306/internship?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    open-in-view: false
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true

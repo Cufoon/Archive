@@ -1,0 +1,28 @@
+.outer {
+  width: 100%;
+  min-height: calc(100vh - 48px);
+  padding: 20px 50px;
+  background-color: rgb(255, 255, 255);
+
+  .placeHolder {
+    width: 100%;
+    height: 20px;
+  }
+
+  .form {
+    width: 450px;
+    margin: 32px auto 10px;
+
+    .inputWidth {
+      width: 250px;
+    }
+  }
+}
+
+.btn {
+  border-radius: 8px;
+}
+
+.widthAll {
+  width: 100%;
+}
