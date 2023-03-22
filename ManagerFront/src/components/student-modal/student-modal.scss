@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+  .top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .leftPart {
+      $height-set: 230px;
+      width: $height-set * 0.618;
+      height: $height-set;
+      box-sizing: border-box;
+      padding-right: 20px;
+      padding-left: 20px;
+      margin-right: 20px;
+      background-color: rgb(204, 204, 204);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 8px;
+      box-shadow: 0 0 0 5px rgb(245, 245, 245);
+      font-size: 80px;
+    }
+
+    .rightPart {
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+      justify-content: flex-start;
+    }
+  }
+
+  .btnGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+
+    .btn {
+      border-radius: 8px;
+    }
+  }
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 0.2em;
+
+  .textBox {
+    min-width: 10em;
+    margin-right: 10px;
+  }
+}

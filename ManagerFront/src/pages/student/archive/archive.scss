@@ -1,0 +1,39 @@
+.outer {
+  width: 100%;
+  min-height: calc(100vh - 48px);
+  padding: 20px 50px;
+  background-color: rgb(255, 255, 255);
+
+  .main {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+  }
+
+  .upload {
+    margin: 30px auto;
+  }
+
+  .avatarWrapper {
+    $width-set: 400px;
+    display: flex;
+    width: $width-set;
+    height: $width-set * 0.618;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 0 5px rgb(245, 245, 245);
+
+    .avatar {
+      color: rgb(196, 196, 196);
+      font-size: 100px;
+    }
+  }
+}

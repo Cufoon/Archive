@@ -1,0 +1,13 @@
+"HTTPHeaders": {
+  "Access-Control-Allow-Methods": [
+    "PUT",
+    "GET",
+    "POST",
+    "OPTIONS"
+  ],
+  "Access-Control-Allow-Origin": [
+    "*",
+    "https://webui.ipfs.io",
+    "http://webui.ipfs.io.ipns.localhost:8080"
+  ]
+}

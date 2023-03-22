@@ -1,0 +1,22 @@
+.container {
+  height: 64px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: rgb(61, 61, 61);
+  line-height: 32px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 0 18px;
+
+  &:hover {
+    background: rgb(245, 249, 255);
+  }
+}
+
+.name {
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+}

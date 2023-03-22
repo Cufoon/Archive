@@ -1,0 +1,465 @@
+.becenter {
+    text-align: center;
+}
+
+.index01,
+.index02,
+.index03,
+.index04,
+.index05,
+.index06 {
+    width: 100%;
+    height: 650px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.index01 .back {
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(140deg, pink 0%, rgb(98, 0, 255) 100%);
+    z-index: -2;
+}
+
+.index01 .bluehand {
+    position: absolute;
+    right: 0;
+    width: 620px;
+    z-index: -1;
+}
+
+.index01 .ball {
+    position: absolute;
+    left: 130px;
+    height: 650px;
+    z-index: -1;
+}
+
+.index01 .xxx {
+    position: absolute;
+    top: 510px;
+    left: 100px;
+    width: 150px;
+    z-index: -1;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+.index01 .logo {
+    text-align: center;
+    margin-top: 180px;
+    height: 70px;
+    width: 100%;
+}
+
+.index01 .logo .img {
+    height: 70px;
+}
+
+.index01 .logotxt {
+    margin-top: 10px;
+    width: 100%;
+    display: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.index01 .playcenter {
+    margin: 0;
+    padding: 0;
+    margin-left: 50%;
+    margin-top: 30px;
+}
+
+.index01 .playcenter .play {
+    height: 75px;
+    width: 75px;
+    border-radius: 75px;
+    background-color: #ffffff94;
+    margin-left: -37.5px;
+    position: relative;
+}
+
+.index01 .playcenter .tri {
+    position: relative;
+    margin-left: -11px;
+    border-style: solid;
+    border-color: #ffffff00 #ffffff00 #ffffff00 #ffffff;
+    border-width: 15px 26px 15px 26px;
+    margin-top: -52.5px;
+    margin-bottom: 52.5px;
+}
+
+.index01 .sign {
+    width: 160px;
+    height: 50px;
+    text-align: center;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #021cff;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px 1px #73008a;
+}
+
+.index01 .sign p {
+    color: #f3f3f3;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.index02 .back {
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    padding: 0px;
+    margin: 0px;
+    background: rgb(255, 237, 237);
+    z-index: -5;
+}
+
+.index02 .dec1 {
+    position: absolute;
+    background: url("../res/decoration_bar.png");
+    background-position: 0 -500px;
+    background-size: 200%;
+    right: 0;
+    width: 500px;
+    height: 500px;
+    z-index: -3;
+}
+
+.index02 .dec2 {
+    position: absolute;
+    background: url("../res/decoration_bar.png");
+    background-position: -500px 0px;
+    background-size: 200%;
+    margin-top: 150px;
+    left: 0px;
+    width: 500px;
+    height: 500px;
+    z-index: -3;
+}
+
+.index02 .dec3 {
+    position: absolute;
+    right: 0;
+    margin-top: 190px;
+    width: 60px;
+    z-index: -4;
+}
+
+.index02 .nnn {
+    margin-left: 50%;
+}
+
+.index02 .png {
+    float: left;
+    width: 400px;
+    margin-left: -450px;
+    margin-top: 80px;
+}
+
+.index02 .a {
+    float: left;
+    margin-top: 110px;
+    margin-left: 80px;
+}
+
+.index02 .title {
+    font-size: 32px;
+    color: #1216fa;
+}
+
+.index02 .content {
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 28px;
+    color: #6d9bff;
+    width: 240px;
+}
+
+.index02 .a .sign {
+    padding: 10px 15px 10px 15px;
+    border-radius: 25px;
+    background-color: #0058fc;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    width: 80px;
+    margin-top: 10px;
+}
+
+.index03 .back {
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    padding: 0px;
+    margin: 0px;
+    background: rgb(255, 237, 237);
+    z-index: -5;
+}
+
+.index03 .dec1 {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 280px;
+    z-index: -3;
+}
+
+.index03 .dec2 {
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 100px;
+    width: 180px;
+    z-index: -4;
+}
+
+.index03 .dec3 {
+    position: absolute;
+    background-image: url("../res/blue_ball.png");
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: -40px 80px;
+    width: 400px;
+    height: 400px;
+    left: 0;
+    margin-top: 250px;
+    z-index: -3;
+}
+
+.index03 .dec4 {
+    position: absolute;
+    margin-top: 370px;
+    margin-left: 210px;
+    width: 280px;
+    z-index: -4;
+}
+
+.index03 .dec5 {
+    position: absolute;
+    right: 0;
+    margin-top: 350px;
+    margin-right: 160px;
+    width: 290px;
+    z-index: -3;
+}
+
+.index03 .dec6 {
+    position: absolute;
+    background-image: url("../res/blue_ball.png");
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: 40px 40px;
+    width: 400px;
+    height: 400px;
+    right: 0;
+    margin-top: 250px;
+    z-index: -4;
+}
+
+.index03 .dec7 {
+    position: absolute;
+    background-image: url("../res/pink_ball.png");
+    background-size: 110%;
+    right: 0;
+    margin-top: 330px;
+    margin-right: 60px;
+    width: 270px;
+    height: 270px;
+    z-index: -2;
+}
+
+.index03 .dec8 {
+    position: absolute;
+    right: 0;
+    margin-top: 200px;
+    margin-right: 78px;
+    width: 155px;
+    z-index: -2;
+}
+
+.index03 .dec9 {
+    position: absolute;
+    background-image: url("../res/blue_ball.png");
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: -40px -40px;
+    right: 0;
+    margin-top: 1px;
+    margin-right: 10px;
+    width: 340px;
+    height: 340px;
+    z-index: -1;
+}
+
+.index03 .title {
+    text-align: center;
+    color: #021cff;
+    padding-top: 190px;
+    padding-bottom: 30px;
+}
+
+.index03 .content {
+    text-align: center;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #0058fc;
+}
+
+.index03 .down {
+    margin-top: 30px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 16px 5px 16px;
+    border: pink solid 1px;
+    border-radius: 25px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.541);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #eb3572;
+    font-size: 18px;
+}
+
+.index04 {
+    background: radial-gradient(circle 800px, rgb(49, 49, 255) -90%, pink);
+}
+
+.index04 .nnn {
+    margin-left: 50%;
+}
+
+.index04 .title {
+    margin-top: 150px;
+    margin-left: -360px;
+    width: 280px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #1317ff;
+}
+
+.index04 .content {
+    font-size: 22px;
+    margin-left: -360px;
+    width: 280px;
+    color: #2326d8;
+}
+
+.index04 .png {
+    float: left;
+    margin-top: 150px;
+    width: 250px;
+    margin-left: 80px;
+}
+
+.index05 {
+    background: linear-gradient(to bottom, pink, blue);
+}
+
+.index05 .title {
+    font-size: 60px;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px #0307ff91;
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+/**************************************************************************************************/
+
+.index05 .line01 {
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.index05 .line01 .a1,
+.index05 .line01 .a3 {
+    width: 200px;
+    height: 220px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+}
+
+.index05 .line01 .a1 {
+    float: left;
+    border-radius: 0 20px 20px 0;
+}
+
+.index05 .line01 .a3 {
+    float: right;
+    border-radius: 20px 0 0 20px;
+}
+
+.index05 .line01 .a2f {
+    margin-left: 50%;
+}
+
+.index05 .line01 .a2 {
+    float: left;
+    width: 600px;
+    height: 300px;
+    margin-left: -300px;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+.index05 .line02 {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.index05 .line02 .a1,
+.index05 .line02 .a2,
+.index05 .line02 .a3,
+.index05 .line02 .a4 {
+    margin: 0;
+    padding: 0;
+    margin-left: 4%;
+    float: left;
+    border-radius: 20px;
+    height: 150px;
+    width: 20%;
+    background-color: #ffffff;
+}
+
+.index06 {
+    background-image: url("../res/bg2.png");
+}
+
+.index06 .png01 {
+    width: 800px;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+.index06 .title {
+    font-size: 80px;
+    margin-left: 60px;
+    color: rgb(255, 192, 241);
+}
+
+.index06 .content {
+    margin-top: 60px;
+    margin-left: 260px;
+    font-size: 34px;
+    color: rgb(255, 192, 213);
+}
+
+.index06 .content div {
+    height: 80px;
+}
+
+.index06 .png02 {
+    float: right;
+    margin-top: 80px;
+    margin-right: 80px;
+    height: 20px;
+}

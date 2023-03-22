@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <button id="start" onclick="startProcess()">开始执行</button>
+    </div>
+    <script src="./axios.min.js"></script>
+    <script src="./index.js"></script>
+    <script>
+      function startProcess() {
+        CufoonAPP.deleteDeployment(
+          "YourName", // 用户名
+          "RepoName", // 仓库名
+          "Production", // 环境名
+          "Github API Token", // github api token
+          "keep" // 是否保留最新的一次部署 'keep'保留 'none'不保留
+        );
+      }
+    </script>
+  </body>
+</html>

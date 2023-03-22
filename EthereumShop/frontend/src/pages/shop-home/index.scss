@@ -1,0 +1,26 @@
+.list-demo-action-layout {
+  :global {
+    .image-area {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 200px;
+      margin-left: 10px;
+      border-radius: 12px;
+      border: 1px solid #a9a9a9;
+      box-shadow: 5px 5px 12px 2px rgb(227, 235, 240);
+      overflow: hidden;
+    }
+
+    .image-area img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .arco-list-item-action .arco-icon {
+      margin: 0 4px;
+    }
+  }
+}

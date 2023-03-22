@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>效果五</title>
+		<style>
+			.dtop {
+				width: auto;
+				margin-left: 10%;
+				margin-right: 10%;
+				text-align: center;
+				background-color: rgb(202, 202, 202);
+				color: rgb(7, 7, 7);
+				margin-bottom: 3px;
+				padding: 10px;
+			}
+			.dmid {
+				width: auto;
+				margin-left: 10%;
+				margin-right: 10%;
+				height: 425px;
+				margin-bottom: 2px;
+				text-align: center;
+				color: #ffffff;
+			}
+			.a {
+				width: 15%;
+				background-color: rgba(243, 243, 243, 0.733);
+				height: inherit;
+				color: rgb(7, 7, 7);
+				float: left;
+			}
+			.b {
+				width: auto;
+				background-color: #f1f1f1;
+				height: inherit;
+				position: relative;
+				margin-left: 15%;
+				margin-right: 15%;
+				color: rgb(7, 7, 7);
+			}
+			.c {
+				width: 15%;
+				background-color: rgba(243, 243, 243, 0.733);
+				height: inherit;
+				position: relative;
+				color: rgb(7, 7, 7);
+				float: right;
+			}
+			.dbot {
+				width: auto;
+				margin-left: 10%;
+				margin-right: 10%;
+				text-align: center;
+				background-color: rgb(240, 240, 240);
+				color: rgb(37, 37, 37);
+				margin-bottom: 3px;
+				padding: 10px;
+			}
+			table {
+				width: 100%;
+				border-collapse: collapse;
+			}
+			td {
+				padding: 10px;
+			}
+			td#r {
+				text-align: right;
+				padding-right: 2px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="dtop">
+			这是顶栏哦
+		</div>
+		<div class="dmid">
+			<div class="a">
+				<p>请在右边填写表格</p>
+			</div>
+			<div class="c">
+				<p>请在左边填写表格</p>
+			</div>
+			<div class="b">
+				<table cellspacing="0" border="1px">
+					<tbody>
+						<tr>
+							<td colspan="3"><strong>1.姓名和联系方式</strong></td>
+						</tr>
+						<tr>
+							<td id="r">真实姓名：</td>
+							<td><input type="text" name="name" />*</td>
+							<td>
+								<form action="" method="GET">
+									<label
+										><input
+											type="radio"
+											name="sex"
+											value="man"
+											checked="checked"
+										/>男</label
+									>
+									<label
+										><input type="radio" name="sex" value="woman" />女</label
+									>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td id="r">电子邮箱：</td>
+							<td><input type="text" name="email" />*</td>
+							<td>
+								<strong>非常重要！</strong
+								><br />这是本工作室与您联系的首选方式哦,请填写真实.
+							</td>
+						</tr>
+						<tr>
+							<td id="r">电话：</td>
+							<td><input type="text" name="phone" />*</td>
+							<td>电话为必须填写项</td>
+						</tr>
+						<tr>
+							<td id="r">所实习部门：</td>
+							<td colspan="2" style="text-align: left;">
+								<select style="margin-left: 0.5em;width: 4em">
+									<option value="yf">研发</option>
+									<option value="sj">设计</option>
+									<option value="yy">运营</option>
+									<option value="nr">内容</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td id="r">实习岗位：</td>
+							<td><input type="text" name="position" />*</td>
+							<td>研发部岗位：前端/后端/运维</td>
+						</tr>
+						<tr>
+							<td id="r">手机号码：</td>
+							<td><input type="text" name="numbers" /></td>
+							<td style="border: none;"></td>
+						</tr>
+						<tr>
+							<td id="r">邮箱：</td>
+							<td><input type="text" name="mail" /></td>
+							<td style="border: none;"></td>
+						</tr>
+						<tr>
+							<td id="r">性别取向：</td>
+							<td><input type="text" name="sexlike" /></td>
+							<td style="border: none;"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="dbot">
+			这是底栏
+		</div>
+	</body>
+</html>

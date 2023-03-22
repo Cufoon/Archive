@@ -1,0 +1,78 @@
+$border-radius-size: 12px;
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 0;
+  background-image: linear-gradient(315deg, rgb(0, 147, 233) 0%, rgb(157, 213, 204) 100%);
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: bold;
+  white-space: nowrap;
+  border-radius: $border-radius-size $border-radius-size 0 0;
+  margin-bottom: 12px;
+  user-select: none;
+}
+
+.app {
+  &-layout {
+    background: rgb(240, 240, 240);
+    min-height: 100vh;
+  }
+
+  &-sider {
+    height: calc(100vh - 15px);
+    overflow: auto;
+    box-sizing: border-box;
+    box-shadow: 0 8px 12px rgb(235, 237, 240);
+    margin: 5px 6px 10px 6px;
+    border-radius: $border-radius-size;
+    background: rgb(255, 255, 255);
+
+    :global {
+      .arco-layout-sider-children {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    &-collasptor {
+      cursor: pointer;
+      width: 64px;
+      height: 64px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: $border-radius-size;
+      font-size: 24px;
+      color: rgb(141, 141, 141);
+
+      &:hover {
+        background: rgb(245, 249, 255);
+      }
+    }
+  }
+
+  &-header {
+    background: rgb(255, 255, 255);
+    border-radius: $border-radius-size;
+    margin: 5px 6px;
+    overflow: hidden;
+    box-shadow: 0 8px 12px rgb(235, 237, 240);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  &-content {
+    background: rgb(255, 255, 255);
+    margin: 5px 6px 20px 6px;
+    padding: $border-radius-size * 2;
+    border-radius: $border-radius-size;
+  }
+}

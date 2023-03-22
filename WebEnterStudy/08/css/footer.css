@@ -1,0 +1,53 @@
+.foot{
+    background: url("../ress/ball.png");
+    background-size: 100%;
+    background-position: 0 3rem;
+    background-repeat: no-repeat no-repeat;
+    width: 100%;
+    padding-top: 22rem;
+    padding-bottom: 2rem;
+    overflow: hidden;
+    color: aliceblue;
+    box-shadow:1px 0 15rem 8rem rgb(0, 0, 0) inset;
+    text-align: center;
+}
+
+.foot .leftpart{
+    width: 35rem;
+    position: relative;
+    display: inline-block;
+    right: 15rem;
+}
+
+.foot .rightpart{
+    width: 30rem;
+    left: 2.5rem;
+    display: inline-block;
+    position: relative;
+}
+
+.foot .leftpart .footlogo{
+    width: 10rem;
+    background: black;
+    margin-left: 3rem;
+    margin-top: -2rem;
+    margin-bottom: 3rem;
+}
+
+.foot .leftpart .address{
+    margin-left: 14rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    text-align: left;
+}
+
+.foot .rightpart table{
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.foot .rightpart table td{
+    text-align: center;
+    height: 1.2rem;
+    padding: 0.6rem;
+}

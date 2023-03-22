@@ -1,0 +1,17 @@
+.outer {
+  margin-right: 10px;
+
+  .notice {
+    font-size: 14px;
+  }
+
+  .avatar {
+    margin-top: -4px;
+    box-shadow: 0 0 0 3px rgb(245, 245, 245);
+  }
+
+  .confirm {
+    color: #f00;
+    font-size: 16px;
+  }
+}

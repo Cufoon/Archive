@@ -1,0 +1,20 @@
+{
+  "name": "rsa",
+  "version": "1.0.0",
+  "description": "A example of rsa encrypt/decrypt in javascript.",
+  "scripts": {
+    "build": "node ./clear.js && tsc",
+    "keygen": "node ./build/keygen.js -n 512",
+    "decode": "node ./build/decrypt.js",
+    "encode": "node ./build/encrypt.js"
+  },
+  "author": "Cufoon Lin",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.14.35",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "commander": "^7.2.0"
+  }
+}

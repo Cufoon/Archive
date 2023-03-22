@@ -1,0 +1,21 @@
+.fix-arco-menu-item-inner {
+  :global {
+    .arco-menu-item-inner {
+      display: flex !important;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 4px;
+    }
+  }
+}
+
+.fix-arco-menu-icon-suffix {
+  :global {
+    .arco-menu-icon-suffix {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+    }
+  }
+}

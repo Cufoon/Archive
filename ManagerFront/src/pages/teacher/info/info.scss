@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+
+  .formContent {
+    .topContent {
+      display: flex;
+      flex-direction: row;
+
+      .leftPart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5px;
+
+        .avatarWrapper {
+          $height-set: 280px;
+          display: flex;
+          width: $height-set * 0.618;
+          height: $height-set;
+          align-items: center;
+          justify-content: center;
+          background-color: rgb(245, 245, 245);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 10px;
+          box-shadow: 0 0 0 5px rgb(245, 245, 245);
+
+          .avatar {
+            color: rgb(196, 196, 196);
+            font-size: 100px;
+          }
+        }
+      }
+
+      .rightPart {
+        width: 500px;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .btnGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .button {
+    border-radius: 8px;
+  }
+
+  .needMargin {
+    margin-left: 40px;
+  }
+}

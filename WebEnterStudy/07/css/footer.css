@@ -1,0 +1,38 @@
+.foot{
+    background: url("../res/bg2.png");
+    height: 400px;
+    overflow: hidden;
+}
+.foot .leftpart{
+    margin-top: 120px;
+    width: 40%;
+    float: left;
+}
+.foot .rightpart{
+    margin-top: 120px;
+    width: 60%;
+    float: left;
+}
+.foot .leftpart .footlogo{
+    width: 300px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+.foot .leftpart .address{
+    margin-left: 100px;
+}
+.foot .leftpart .contact{
+    margin-left: 100px;
+}
+.foot .leftpart .contact img{
+    width: 30px;
+}
+.foot .rightpart table{
+    width: 90%;
+    font-size: 22px;
+}
+.foot .rightpart table td{
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}

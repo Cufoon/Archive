@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "stylelint-config-sass-guidelines",
+    "stylelint-config-idiomatic-order"
+  ],
+  "rules": {
+    "order/properties-alphabetical-order": null,
+    "selector-class-pattern": null,
+    "max-nesting-depth": null,
+    "selector-max-compound-selectors": null,
+    "property-no-vendor-prefix": null,
+    "selector-no-qualifying-type": [true, { "ignore": ["attribute"] }]
+  }
+}
